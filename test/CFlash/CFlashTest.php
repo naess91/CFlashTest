@@ -5,30 +5,30 @@ class CFlashTestClass extends \PHPUnit_Framework_TestCase
 {
 public function testCreateElement()
 {
-    $statusMessageObj = new CFlash(new FakeSession());
-    $res = $statusMessageObj->isEmpty();
+    $cflash = new CFlash(new FakeSession());
+    $res = $cflash->isEmpty();
     $exp = true;
     $this->assertEquals($res, $exp, "Created element is created and deleted.");
 }
 public function testCustomMessage()
 {
-    $statusMessageObj = new CFlash(new FakeSession());
-    $statusMessageObj->CustomMessage("Debug Meddelande!","debug");
-    $res = $statusMessageObj->displayFlashMessages();
-    $exp = "<div id = 'flashMessage' class='debug'><img style = 'float:left; margin-top:10px; margin-left:20px' src ='img/flash/debug.png' alt = 'type'> <p >Debug Meddelande!</p></div>";
-     $this->assertEquals($res, $exp, "Debug message went wrong.");
-    $statusMessageObj->deleteMessages();
+    $cflash = new CFlash(new FakeSession());
+    $cflash->CustomMessage("hej!","debug");
+    $res = $cflash->displayFlashMessages();
+    $exp = "<div id = 'flashMessage' class='debug'><img style = 'float:left; margin-top:10px; margin-left:20px' src ='img/flash/debug.png' alt = 'type'> <p >hej!</p></div>";
+     $this->assertEquals($res, $exp, "Something went wrong.");
+    $cflash->deleteMessages();
     }
     
     
 public function testEmpty()
 {
-    $statusMessageObj = new CFlash(new FakeSession());
-    $res = $statusMessageObj->isEmpty();
+    $cflash = new CFlash(new FakeSession());
+    $res = $cflash->isEmpty();
     $exp = true;
     $this->assertEquals($res, $exp, "Something went wrong.");
-    $statusMessageObj->CustomMessage("Debug meddelande!","debug");
-    $res = $statusMessageObj->isEmpty();
+    $cflash->CustomMessage("hej!","debug");
+    $res = $cflash->isEmpty();
     $exp = false;
     $this->assertEquals($res, $exp, "Something went wrong.");
 }
