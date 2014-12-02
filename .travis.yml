@@ -17,5 +17,4 @@ after_script:
     - php mosbth/bin/coveralls -v
     - php ocular.phar code-coverage:upload --format=php-clover build/logs/clover.xml
 
-notifications:
-    irc: "irc.freenode.org#dbwebb"
+
