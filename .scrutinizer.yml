@@ -3,6 +3,6 @@ imports:
 
 filter:
     excluded_paths: [vendor/*, test/*]
-	
+
 tools:
     external_code_coverage: true
