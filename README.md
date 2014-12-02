@@ -1,7 +1,9 @@
 CFlash for Anax-MVC
 =========================
 
-With CFlash you can customize your own flash messages easy. With five pre defined flash message types it is very easy to install. You can also create your own personal ones.
+With CFlash you can customize your own flash messages easy. With five pre defined flash message types it is very easy to install. You can also create your own personal ones.    
+
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/naess91/CFlashTest/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/naess91/CFlashTest/?branch=master) [![Code Coverage](https://scrutinizer-ci.com/g/naess91/CFlashTest/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/naess91/CFlashTest/?branch=master) [![Build Status](https://scrutinizer-ci.com/g/naess91/CFlashTest/badges/build.png?b=master)](https://scrutinizer-ci.com/g/naess91/CFlashTest/build-status/master)
 
 License
 -------
