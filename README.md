@@ -6,7 +6,7 @@ With CFlash you can customize your own flash messages easy. With five pre define
 License
 -------
 
-This software is free software and carries a MIT license.
+This software is free software and carries a MIT license..
 
 Installation
 -------------------------
