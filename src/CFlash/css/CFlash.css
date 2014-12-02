@@ -1,0 +1,54 @@
+#flashMessage {
+
+    width: 400px;
+    height: 40px;
+    
+    margin: 10px;
+    border-style: solid;
+    border-width: 3px;
+   
+
+}
+
+#flashMessage p {
+	margin-left:10px;
+   float:left;
+   font-style:oblique;
+
+}
+.error{
+
+    background-color: #FF6C6C;
+    color: #CC0000;
+	
+}
+
+.success{
+
+    background-color: #66FF33;
+
+    color: #3D991F;
+}
+
+.info{
+
+    background-color: #66CCFF;
+    color: #3D7A99;
+
+}
+
+.warning{
+
+    background-color: #E6E600;
+
+    color: #AAAA19;
+
+}
+
+.notice{
+
+    background-color:#CCC;
+
+    color:#666;
+
+}
